@@ -31,18 +31,17 @@ class SearchVC: UIViewController {
     var webService = WebService()
     
     var models : [ResultModel]? = nil
-    
     var filteredModels : [ResultModel]!
     
     var needsRefresh = true
     
     var selectedIndex = 0
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         webService.delegate = self
         fetch()
+        
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
@@ -58,19 +57,25 @@ class SearchVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showInfo" {
             let destinationVC = segue.destination as! InfoVC
-            destinationVC.model = self.models![selectedIndex]
+            destinationVC.model = self.filteredModels![selectedIndex]
         }
     }
 
 }
 
 extension SearchVC: UISearchBarDelegate {
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.filteredModels = models!.filter {
+        self.filteredModels = self.models!.filter {
             $0.name!.lowercased().contains(searchText.lowercased())
+        }
+        
+        if searchText == "" {
+            self.filteredModels = self.models
         }
         self.tableView.reloadData()
     }
+    
 }
 
 
