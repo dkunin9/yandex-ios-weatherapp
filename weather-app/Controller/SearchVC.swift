@@ -12,20 +12,27 @@ class SearchVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    
     var cities = [
         // berlin
         [52.52437, 13.41053],
-        // st petersburg
-        [59.9500, 30.3167],
+        // new york
+        [40.714599, -74.002791],
+        //london
+        [51.507351, -0.127660],
         // moscow
-        [55.751244, 37.618423],
-        // minsk
-        [53.9022, 27.5618],
-        // hamburg
-        [53.5500, 10.0000],
-        // munich
-        [48.1372, 11.5755],
+        [55.753215, 37.622504],
+        // san diego
+        [32.715711, -117.154614],
+        // shanhai
+        [31.230863, 121.470462],
+        // paris
+        [48.856663, 2.351556],
+        // sydney
+        [-33.865248, 151.216484],
+        // oslo
+        [59.912752, 10.734365],
+        //helsinki
+        [60.166892, 24.943673]
     ]
     
     var webService = WebService()

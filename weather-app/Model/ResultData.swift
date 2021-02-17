@@ -9,6 +9,7 @@ import Foundation
 
 struct ResultData: Codable {
     let info: Info
+    let fact: Fact
 }
 
 struct Info: Codable {
@@ -17,4 +18,9 @@ struct Info: Codable {
 
 struct Tzinfo: Codable {
     let name: String
+}
+
+struct Fact: Codable {
+    let temp: Int
+    let condition: String
 }

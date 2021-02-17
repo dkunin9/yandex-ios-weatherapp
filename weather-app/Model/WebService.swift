@@ -53,7 +53,8 @@ struct WebService {
             do {
                 let decodedData = try decoder.decode(ResultData.self, from: data)
                 let name = decodedData.info.tzinfo.name
-                let city = ResultModel(name: name, tempreture: 1337.0)
+                let temp = decodedData.fact.temp
+                let city = ResultModel(name: name, tempreture: temp)
                 return city
             } catch {
                 delegate?.didFailWithError(error: error)

@@ -9,6 +9,6 @@ import Foundation
 
 struct ResultModel {
     var name: String?
-    var tempreture: Double?
-    var forecast: String?
+    var tempreture: Int?
+    var conditions: String?
 }
