@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6570253525DD715500AE951C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6570253425DD715500AE951C /* README.md */; };
+		6570253925DD738000AE951C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6570253825DD738000AE951C /* City.swift */; };
 		6593A83925DD3FAD00B85762 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6593A83825DD3FAD00B85762 /* AppDelegate.swift */; };
 		6593A83B25DD3FAD00B85762 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6593A83A25DD3FAD00B85762 /* SceneDelegate.swift */; };
 		6593A84025DD3FAD00B85762 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6593A83E25DD3FAD00B85762 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		6570253425DD715500AE951C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		6570253825DD738000AE951C /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		6593A83525DD3FAD00B85762 /* weather-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weather-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6593A83825DD3FAD00B85762 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6593A83A25DD3FAD00B85762 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				6593A85125DD405600B85762 /* ResultModel.swift */,
 				6593A86025DD451A00B85762 /* ResultData.swift */,
 				6593A85D25DD44F100B85762 /* WebService.swift */,
+				6570253825DD738000AE951C /* City.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			files = (
 				6593A85E25DD44F100B85762 /* WebService.swift in Sources */,
 				6593A85825DD423600B85762 /* SearchVC.swift in Sources */,
+				6570253925DD738000AE951C /* City.swift in Sources */,
 				6593A85225DD405600B85762 /* ResultModel.swift in Sources */,
 				6593A85B25DD42B100B85762 /* Cell.swift in Sources */,
 				6593A86525DD45B300B85762 /* InfoVC.swift in Sources */,

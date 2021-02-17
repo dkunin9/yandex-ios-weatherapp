@@ -13,6 +13,7 @@ class InfoVC: UIViewController {
     @IBOutlet weak var weatherImage: UIImageView!
     @IBOutlet weak var conditionLabel: UILabel!
     @IBOutlet weak var tempretureLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
     
     
     var model: ResultModel!
@@ -85,6 +86,9 @@ class InfoVC: UIViewController {
             print("s")
             break
         }
+        
+        infoLabel.text = model.info
+        infoLabel.sizeToFit()
     }
 
 }

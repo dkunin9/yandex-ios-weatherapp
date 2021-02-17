@@ -20,8 +20,13 @@ struct WebService {
     
     var delegate: WebServiceDelegate?
     
-    func fetchWeather(lat: Double, lon: Double) {
-        let urlString = "\(yandexURL)" + "lat=" + String(lat) + "&lon=" + String(lon) + "&extra=true"
+    var name: String?
+    var info: String?
+    
+    mutating func fetchWeather(city: City) {
+        let urlString = "\(yandexURL)" + "lat=" + String(city.lat) + "&lon=" + String(city.lon) + "&extra=true"
+        self.name = city.name
+        self.info = city.info
         performRequest(with: urlString)
     }
     
@@ -52,10 +57,9 @@ struct WebService {
             let decoder = JSONDecoder()
             do {
                 let decodedData = try decoder.decode(ResultData.self, from: data)
-                let name = decodedData.info.tzinfo.name
                 let temp = decodedData.fact.temp
                 let conditions = decodedData.fact.condition
-                let city = ResultModel(name: name, tempreture: temp, conditions: conditions)
+                let city = ResultModel(name: self.name, tempreture: temp, conditions: conditions, info: self.info)
                 return city
             } catch {
                 delegate?.didFailWithError(error: error)

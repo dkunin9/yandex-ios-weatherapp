@@ -11,4 +11,5 @@ struct ResultModel {
     var name: String?
     var tempreture: Int?
     var conditions: String?
+    var info: String?
 }
