@@ -52,6 +52,7 @@
 		6593A82C25DD3FAD00B85762 = {
 			isa = PBXGroup;
 			children = (
+				6570253425DD715500AE951C /* README.md */,
 				6593A83725DD3FAD00B85762 /* weather-app */,
 				6593A83625DD3FAD00B85762 /* Products */,
 			);
@@ -73,7 +74,6 @@
 				6593A84E25DD402500B85762 /* Model */,
 				6593A84D25DD401A00B85762 /* App */,
 				6593A84125DD3FAF00B85762 /* Assets.xcassets */,
-				6570253425DD715500AE951C /* README.md */,
 				6593A84625DD3FAF00B85762 /* Info.plist */,
 			);
 			path = "weather-app";
