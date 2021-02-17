@@ -42,7 +42,6 @@ class InfoVC: UIViewController {
         // condition
         switch model.conditions {
 /*
-         
          clear — ясно.
          partly-cloudy — малооблачно.
          cloudy — облачно с прояснениями.
