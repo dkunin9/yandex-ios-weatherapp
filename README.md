@@ -1,5 +1,5 @@
 <p align="center">  
-weather checker ios app
+test task - weather checker
 </p>
 
 
@@ -7,7 +7,7 @@ weather checker ios app
 
 * MVC design pattern
 * Storyboards&segue
-* Yandex weather API
+* [Yandex weather API](https://yandex.ru/dev/weather/doc/dg/concepts/about-docpage/)
 
 
 ## Running
